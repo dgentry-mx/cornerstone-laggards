@@ -457,7 +457,7 @@ a {
 		position: relative;
 
 		@media ($small-up) {
-			margin: 0 10px;
+			margin: 0 10px 48px;
 		}
 
 		@media ($medium-up) {
@@ -519,6 +519,7 @@ a {
 
 	.pf-carousel-action {
 		text-align: center;
+
 		
 		@media ($medium-up) {
 			margin-top: 2rem;
