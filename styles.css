@@ -102,7 +102,7 @@ strong {
 }
 
 .text-large {
-  font-size: 20px;
+  font-size: 18px;
 }
 @media (min-width: 1024px) {
   .text-large {
@@ -158,7 +158,7 @@ h2,
 .h2 {
   font-size: 32px;
   margin-bottom: 24px;
-  line-height: 1.1;
+  line-height: 1.15;
   color: #000000;
   letter-spacing: -2.18px;
 }
@@ -171,7 +171,7 @@ h2,
 @media (min-width: 1024px) {
   h2,
 .h2 {
-    font-size: 64px;
+    font-size: 70px;
   }
 }
 
@@ -179,7 +179,7 @@ h3,
 .h3 {
   font-size: 26px;
   margin-bottom: 24px;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 @media (min-width: 768px) {
   h3,
@@ -198,14 +198,14 @@ h4,
 .h4 {
   font-size: 30px;
   margin-bottom: 24px;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 h5,
 .h5 {
   font-size: 20px;
   margin-bottom: 24px;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 p {
@@ -348,21 +348,21 @@ a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 768px) {
   .hero {
     height: 500px;
     background-position: left top;
   }
-  .hero::before {
-    display: none;
-  }
 }
 @media (min-width: 1024px) {
   .hero {
     height: 720px;
     background-position: center top;
+  }
+  .hero::before {
+    display: none;
   }
 }
 @media (min-width: 1500px) {
@@ -376,7 +376,7 @@ a:hover {
   z-index: 2;
 }
 .hero__inner {
-  padding: 32px 20px;
+  padding: 120px 20px 40px;
 }
 @media (min-width: 1024px) {
   .hero__inner {
@@ -396,16 +396,22 @@ a:hover {
 }
 
 .pf-track-block {
-  padding: 32px 0 48px;
+  padding: 48px 0 80px;
 }
 @media (min-width: 768px) {
   .pf-track-block {
-    padding: 48px 0 80px;
+    padding: 64px 0 80px;
   }
 }
 .pf-track-block__title {
   max-width: 1048px;
   margin: 0 auto;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .pf-track-block__title {
+    text-align: center;
+  }
 }
 .pf-track-block .pf-carousel {
   padding: 32px 0 0;
@@ -463,15 +469,16 @@ a:hover {
 }
 .pf-track-block .pf-microsite-card img {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
   display: block;
 }
 .pf-track-block .pf-microsite-card div {
   color: #4A5567;
   text-align: left;
+  line-height: 1.75;
 }
 .pf-track-block .pf-microsite-card div:first-child {
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 .pf-track-block .pf-microsite-card-link {
@@ -490,16 +497,16 @@ a:hover {
 }
 
 .icon-callouts {
-  padding: 80px 0 48px;
+  padding: 80px 0;
 }
 @media (min-width: 768px) {
   .icon-callouts {
-    padding: 112px 0 64px;
+    padding: 112px 0;
   }
 }
 @media (min-width: 1024px) {
   .icon-callouts {
-    padding: 160px 0 80px;
+    padding: 160px 0;
   }
 }
 .icon-callouts__title {
@@ -535,8 +542,8 @@ a:hover {
 }
 @media (min-width: 1024px) {
   .icon-callouts__items {
-    column-gap: 170px;
-    padding: 0 30px;
+    column-gap: 190px;
+    padding: 0 40px;
   }
 }
 .icon-callouts__item-icon {
@@ -553,32 +560,32 @@ a:hover {
 }
 
 .content-left {
-  padding: 48px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
 }
 @media (min-width: 768px) {
   .content-left {
-    padding: 64px 0;
+    padding: 80px 0;
   }
 }
 @media (min-width: 1024px) {
   .content-left {
-    padding: 80px 0;
+    padding: 120px 0;
   }
 }
 .content-left__background {
   position: absolute;
   opacity: 0.1;
-  width: 500px;
-  top: -100px;
-  right: -200px;
+  width: 600px;
+  top: -120px;
+  right: -220px;
 }
 @media (min-width: 768px) {
   .content-left__background {
-    top: -180px;
+    top: -200px;
     right: -200px;
-    width: 800px;
+    width: 900px;
   }
 }
 .content-left__title {
@@ -594,16 +601,16 @@ a:hover {
 }
 
 .alternating-feature {
-  padding: 48px 0;
+  padding: 80px 0;
 }
 @media (min-width: 768px) {
   .alternating-feature {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1024px) {
   .alternating-feature {
-    padding: 128px 0;
+    padding: 148px 0;
   }
 }
 .alternating-feature__grid {
@@ -625,10 +632,14 @@ a:hover {
 .alternating-feature__image img {
   width: 100%;
 }
+.alternating-feature__content {
+  margin-top: -5px;
+}
 .alternating-feature__text {
   max-width: 530px;
   font-size: 18px;
-  line-height: 1.25;
+  line-height: 1.35;
+  margin-bottom: 45px;
 }
 @media (min-width: 1024px) {
   .alternating-feature__text {

@@ -122,7 +122,7 @@ strong {
 }
 
 .text-large {
-	font-size: 20px;
+	font-size: 18px;
 
 	@media ($large-up) {
 		font-size: 24px;
@@ -172,7 +172,7 @@ h2,
 .h2 {
 	font-size: 32px;
 	margin-bottom: 24px;
-	line-height: 1.1;
+	line-height: 1.15;
 	color: $black;
 	letter-spacing: -2.18px;
 
@@ -181,7 +181,7 @@ h2,
 	}
 
 	@media ($large-up) {
-		font-size: 64px;
+		font-size: 70px;
 	}
 }
 
@@ -189,7 +189,7 @@ h3,
 .h3 {
 	font-size: 26px;
 	margin-bottom: 24px;
-	line-height: 1.1;
+	line-height: 1.15;
 
 	@media ($medium-up) {
 		font-size: 32px;
@@ -204,14 +204,14 @@ h4,
 .h4 {
 	font-size: 30px;
 	margin-bottom: 24px;
-	line-height: 1.1;
+	line-height: 1.15;
 }
 
 h5,
 .h5 {
 	font-size: 20px;
 	margin-bottom: 24px;
-	line-height: 1.1;
+	line-height: 1.15;
 }
 
 p {
@@ -367,21 +367,21 @@ a {
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background: rgba(0, 0, 0, 0.65);
+		background: rgba(0, 0, 0, 0.5);
 	}
 
 	@media ($medium-up) {
 		height: 500px;
 		background-position: left top;
-
-		&::before {
-			display: none;
-		}
 	}
 
 	@media ($large-up) {
 		height: 720px;
 		background-position: center top;
+
+		&::before {
+			display: none;
+		}
 	}
 
 	@media (min-width: 1500px) {
@@ -395,7 +395,7 @@ a {
 	}
 
 	&__inner {
-		padding: 32px 20px;
+		padding: 120px 20px 40px;
 		
 		@media ($large-up) {
 			padding: 32px;
@@ -417,15 +417,20 @@ a {
 }
 
 .pf-track-block {
-	padding: 32px 0 48px;
+	padding: 48px 0 80px;
 
 	@media ($medium-up) {
-		padding: 48px 0 80px;
+		padding: 64px 0 80px;
 	}
 
 	&__title {
 		max-width: 1048px;
 		margin: 0 auto;
+		text-align: left;
+
+		@media ($medium-up) {
+			text-align: center;
+		}
 	}
 
 	.pf-carousel {
@@ -484,17 +489,18 @@ a {
 
 		img {
 			width: 100%;
-			margin-bottom: 20px;
+			margin-bottom: 36px;
 			display: block;
 		}
 
 		div {
 			color: $slate;
 			text-align: left;
+			line-height: 1.75;
 		}
 
 		div:first-child {
-			font-weight: 700;
+			font-weight: 500;
 			color: $black;
 		}
 	}
@@ -517,14 +523,14 @@ a {
 }
 
 .icon-callouts {
-	padding: 80px 0 48px;
+	padding: 80px 0;
 
 	@media ($medium-up) {
-		padding: 112px 0 64px;
+		padding: 112px 0;
 	}
 
 	@media ($large-up) {
-		padding: 160px 0 80px;
+		padding: 160px 0;
 	}
 
 	&__title {
@@ -556,8 +562,8 @@ a {
 		}
 
 		@media ($large-up) {
-			column-gap: 170px;
-			padding: 0 30px;
+			column-gap: 190px;
+			padding: 0 40px;
 		}
 	}
 
@@ -581,29 +587,29 @@ a {
 }
 
 .content-left {
-	padding: 48px 0;
+	padding: 80px 0;
 	position: relative;
 	overflow: hidden;
 
 	@media ($medium-up) {
-		padding: 64px 0;
+		padding: 80px 0;
 	}
 
 	@media ($large-up) {
-		padding: 80px 0;
+		padding: 120px 0;
 	}
 
 	&__background {
 		position: absolute;
 		opacity: 0.1;
-		width: 500px;
-		top: -100px;
-		right: -200px;
+		width: 600px;
+		top: -120px;
+		right: -220px;
 
 		@media ($medium-up) {
-			top: -180px;
+			top: -200px;
 			right: -200px;
-			width: 800px;
+			width: 900px;
 		}
 	}
 
@@ -621,14 +627,14 @@ a {
 }
 
 .alternating-feature {
-	padding: 48px 0;
+	padding: 80px 0;
 
 	@media ($medium-up) {
-		padding: 80px 0;
+		padding: 100px 0;
 	}
 
 	@media ($large-up) {
-		padding: 128px 0;
+		padding: 148px 0;
 	}
 
 	&__grid {
@@ -652,10 +658,15 @@ a {
 		}
 	}
 
+	&__content {
+		margin-top: -5px;
+	}
+
 	&__text {
 		max-width: 530px;
 		font-size: 18px;
-		line-height: 1.25;
+		line-height: 1.35;
+		margin-bottom: 45px;
 
 		@media ($large-up) {
 			font-size: 24px;
